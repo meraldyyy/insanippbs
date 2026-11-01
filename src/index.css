@@ -1143,6 +1143,31 @@ button:disabled { cursor: not-allowed; opacity: .6; }
 .auth-screen[data-theme=dark] .auth-slide::after{background:linear-gradient(90deg,#020806e8 0%,#06140db8 42%,#06140d55 100%),linear-gradient(0deg,#020806d9 0%,transparent 44%)}
 @media(max-width:720px){.auth-screen[data-theme=dark] .auth-panel{background:#101a16}.auth-screen[data-theme=dark] .auth-form-wrap{background:#14211c}}
 
+@media(max-width:720px){
+  .auth-screen{display:block;min-height:100vh;min-height:100svh;padding:0;background:#edf5ef}
+  .auth-visual{display:none}
+  .auth-panel{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;min-height:100vh;min-height:100svh;margin:0;padding:max(84px,calc(env(safe-area-inset-top) + 72px)) 22px calc(24px + env(safe-area-inset-bottom));overflow:visible;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+  .auth-form-wrap{width:100%;max-width:440px;padding:26px 22px;border:1px solid #dcebe0;border-radius:24px;background:rgba(255,255,255,.82);box-shadow:0 16px 42px #164c2b12;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+  .auth-theme-toggle{top:max(18px,env(safe-area-inset-top));right:20px}
+  .auth-form-wrap>.mobile-brand{display:flex;margin:0 0 30px;padding:0;color:#193d31}
+  .auth-panel .eyebrow{margin-bottom:10px;font-size:9px}
+  .auth-panel h2{font-size:clamp(25px,7vw,30px);line-height:1.2}
+  .auth-subtitle{margin-bottom:24px;line-height:1.55}
+  .auth-form-wrap form{gap:18px}
+  .auth-form-wrap label{gap:8px;font-size:12px}
+  .auth-form-wrap input:not([type=checkbox]){width:100%;min-width:0;min-height:50px;padding:13px 14px;font-size:16px}
+  .auth-form-wrap .password-input-wrap input{padding-right:46px}
+  .auth-form-wrap .remember-me{flex-direction:row;align-items:center;gap:10px}
+  .auth-form-wrap input[type=checkbox]{width:18px;height:18px;min-height:18px;margin:0;padding:0;accent-color:#24824b}
+  .auth-button{min-height:50px;margin-top:2px}
+  .auth-switch{margin:20px 0 0;line-height:1.6}
+  .auth-footer{position:static;display:block;width:100%;max-width:440px;margin:20px auto 0;text-align:center;line-height:1.6}
+  .auth-screen[data-theme=dark]{background:#0b1210}
+  .auth-screen[data-theme=dark] .auth-panel{background:transparent}
+  .auth-screen[data-theme=dark] .auth-form-wrap{border-color:#2d483a;background:#14211c;box-shadow:0 18px 42px #00000024}
+  .auth-screen[data-theme=dark] .auth-form-wrap input[type=checkbox]{width:18px;height:18px;min-height:18px;padding:0}
+}
+
 /* Launcher loading dark mode: match the sidebar and skeleton surfaces too. */
 .platform-loading[data-theme=dark] .platform-loading-sidebar{border-color:#303943;background:#1d242c}
 .platform-loading[data-theme=dark] .platform-loading-nav-label{background:#38434e}
